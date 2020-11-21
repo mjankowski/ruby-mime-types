@@ -101,9 +101,15 @@ describe MIME::Types, "registry" do
       assert_includes MIME::Types.type_for("xtxt"), "text/plain"
     end
 
+<<<<<<< HEAD
     it "handles newline characters correctly" do
       assert_includes MIME::Types.type_for("test.pdf\n.txt"), "text/plain"
       assert_includes MIME::Types.type_for("test.txt\n.pdf"), "application/pdf"
+||||||| parent of 32714bc5f1ae (Add a stable sort)
+=======
+    it 'returns a stable order for types with equal priority' do
+      assert_equal %w(audio/webm video/webm), MIME::Types.type_for('foo.webm')
+>>>>>>> 32714bc5f1ae (Add a stable sort)
     end
   end
 
