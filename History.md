@@ -1,5 +1,11 @@
 # Changelog
 
+## NEXT / YYYY-MM-DD
+
+- 1 deprecation:
+
+  - Deprecated array-based MIME::Type initialization.
+
 ## 3.5.2 / 2024-01-02
 
 There are no primary code changes, but we are releasing this as an update as
@@ -105,7 +111,7 @@ there are some validation changes and updated code with formatting.
 
 ## 3.3 / 2019-09-04
 
-- 1 minor enhancement
+- 1 minor enhancement:
 
   - Jean Boussier reduced memory usage for Ruby versions 2.3 or higher by
     interning various string values in each type. This is done with a
