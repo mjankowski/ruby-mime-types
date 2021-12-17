@@ -2,9 +2,10 @@
 
 ## NEXT / YYYY-MM-DD
 
-- 1 deprecation:
+- 2 deprecations:
 
-  - Deprecated array-based MIME::Type initialization.
+  - Deprecated Array-based MIME::Type initialization.
+  - Deprecated String-based MIME::Type initialization.
 
 ## 3.5.2 / 2024-01-02
 
