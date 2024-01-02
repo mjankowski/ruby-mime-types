@@ -32,7 +32,7 @@ module MIME
           " #{message}"
         end
 
-      MIME::Types.logger.warn <<-WARNING.chomp.strip
+      MIME::Types.logger.debug <<-WARNING.chomp.strip
         #{caller(2..2).first}: #{klass}#{level}#{sym}#{pre_message} is deprecated#{message}.
       WARNING
 
